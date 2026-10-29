@@ -7,6 +7,7 @@ import streamlit.components.v1 as components
 # 로컬 모듈 로드
 from preset_stocks import PART1_STOCKS, PART2_STOCKS
 from screener_engine import analyze_live_ticker
+from history_data import HISTORY_TIMELINE, get_snapshot_by_date
 
 # ==========================================
 # 1. 페이지 환경설정 & 다크 금융 스타일 테마
@@ -134,8 +135,9 @@ with col_h2:
 # ==========================================
 # 4. 메인 탭 레이아웃
 # ==========================================
-tab_part2, tab_part1, tab_scanner, tab_automation = st.tabs([
+tab_part2, tab_history, tab_part1, tab_scanner, tab_automation = st.tabs([
     "🚀 파트 2: 턴어라운드 임박 22선",
+    "📊 날짜별 누적 히스토리 (History)",
     "🏆 파트 1: 흑전 확정 44선 (CANSLIM)",
     "⚡ 실시간 종목 스캐너",
     "⚙️ 매일 자동 업데이트 구축"
@@ -334,6 +336,137 @@ with tab_part2:
         ))
         fig_gauge.update_layout(height=220, margin=dict(l=20, r=20, t=30, b=10), paper_bgcolor="#0f172a", font={'color': "#f8fafc"})
         st.plotly_chart(fig_gauge, use_container_width=True)
+
+
+# ----------------------------------------------------
+# TAB: 날짜별 누적 히스토리 (History & Changes)
+# ----------------------------------------------------
+with tab_history:
+    st.markdown("#### 📊 날짜별 턴어라운드 누적 히스토리 & 변동 이력 추적")
+    st.caption("매일 미국 장 마감 후 공시 데이터를 바탕으로 누적된 스냅샷과 신규 편입/이탈 종목을 추적합니다.")
+
+    h_col1, h_col2 = st.columns([2, 1])
+    with h_col1:
+        selected_snap_label = st.selectbox(
+            "📅 조회할 스냅샷 날짜를 선택하세요:",
+            options=[s["label"] for s in HISTORY_TIMELINE],
+            index=0
+        )
+    with h_col2:
+        st.markdown("<div style='height:28px;'></div>", unsafe_allow_html=True)
+        st.caption("💡 미국 SEC 10-Q/10-K 공시 정산 기준 타임스탬프 백업")
+
+    # 선택된 스냅샷 데이터 추출
+    selected_snap = next(s for s in HISTORY_TIMELINE if s["label"] == selected_snap_label)
+
+    # 상단 변동 현황 카드
+    c1, c2, c3, c4 = st.columns(4)
+    with c1:
+        new_str = ", ".join(selected_snap["new_entries"]) if selected_snap["new_entries"] else "없음"
+        st.markdown(f"""
+        <div class="metric-card" style="border-left: 4px solid #10b981;">
+            <div class="metric-lbl">신규 편입 종목 🟢</div>
+            <div class="metric-val" style="font-size: 1.3rem; color: #10b981;">{new_str}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with c2:
+        drop_str = ", ".join(selected_snap["dropped_out"]) if selected_snap["dropped_out"] else "없음"
+        st.markdown(f"""
+        <div class="metric-card" style="border-left: 4px solid #ef4444;">
+            <div class="metric-lbl">조건 미달 탈락 종목 🔴</div>
+            <div class="metric-val" style="font-size: 1.3rem; color: #ef4444;">{drop_str}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with c3:
+        acc_str = ", ".join(selected_snap["accelerated"]) if selected_snap["accelerated"] else "없음"
+        st.markdown(f"""
+        <div class="metric-card" style="border-left: 4px solid #38bdf8;">
+            <div class="metric-lbl">흑전 가속(기간 단축) 🚀</div>
+            <div class="metric-val" style="font-size: 1.3rem; color: #38bdf8;">{acc_str}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with c4:
+        st.markdown(f"""
+        <div class="metric-card" style="border-left: 4px solid #a855f7;">
+            <div class="metric-lbl">해당 일자 관리 종목 수</div>
+            <div class="metric-val" style="font-size: 1.3rem; color: #a855f7;">{selected_snap['total_count']}개사</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    # 변동 요약 코멘터리
+    st.markdown(f"""
+    <div class="highlight-box" style="margin-top: 1rem;">
+        <span style="font-weight:700; color:#38bdf8;">📌 {selected_snap['date']} 스냅샷 브리핑:</span> {selected_snap['summary']}
+    </div>
+    """, unsafe_allow_html=True)
+
+    # 누적 시계열 추이 그래프 (상위 주요 종목)
+    st.markdown("##### 📈 주요 종목 턴어라운드 추이 비교 (시계열 추적)")
+    trend_data = [
+        {"날짜": "2026-10-15", "티커": "NTRA (나테라)", "흑전예상분기": 6, "CANSLIM": 74.0},
+        {"날짜": "2026-10-22", "티커": "NTRA (나테라)", "흑전예상분기": 5, "CANSLIM": 73.0},
+        {"날짜": "2026-10-29", "티커": "NTRA (나테라)", "흑전예상분기": 4, "CANSLIM": 74.0},
+        {"날짜": "2026-10-15", "티커": "RBLX (로블록스)", "흑전예상분기": 6, "CANSLIM": 73.0},
+        {"날짜": "2026-10-22", "티커": "RBLX (로블록스)", "흑전예상분기": 5, "CANSLIM": 74.5},
+        {"날짜": "2026-10-29", "티커": "RBLX (로블록스)", "흑전예상분기": 4, "CANSLIM": 76.0},
+        {"날짜": "2026-10-15", "티커": "U (유니티)", "흑전예상분기": 8, "CANSLIM": 68.0},
+        {"날짜": "2026-10-22", "티커": "U (유니티)", "흑전예상분기": 7, "CANSLIM": 69.0},
+        {"날짜": "2026-10-29", "티커": "U (유니티)", "흑전예상분기": 7, "CANSLIM": 69.5},
+        {"날짜": "2026-10-22", "티커": "ASTS (우주)", "흑전예상분기": 6, "CANSLIM": 83.0},
+        {"날짜": "2026-10-29", "티커": "ASTS (우주)", "흑전예상분기": 5, "CANSLIM": 85.0},
+    ]
+    df_trend = pd.DataFrame(trend_data)
+
+    ch_col1, ch_col2 = st.columns(2)
+    with ch_col1:
+        fig_q = px.line(
+            df_trend, x="날짜", y="흑전예상분기", color="티커", markers=True,
+            title="📉 흑자전환 예상 기간 단축 추이 (낮을수록 흑전 임박)",
+            labels={"흑전예상분기": "남은 분기 (수렴 시 흑전)"}
+        )
+        fig_q.update_yaxes(autorange="reversed")  # 낮을수록 위로 올라오게
+        fig_q.update_layout(paper_bgcolor="#0f172a", plot_bgcolor="#1e293b", font=dict(color="#f8fafc"))
+        st.plotly_chart(fig_q, use_container_width=True)
+
+    with ch_col2:
+        fig_c = px.line(
+            df_trend, x="날짜", y="CANSLIM", color="티커", markers=True,
+            title="📊 종목별 CANSLIM 점수 변동 추이",
+            labels={"CANSLIM": "CANSLIM 종합 점수"}
+        )
+        fig_c.update_layout(paper_bgcolor="#0f172a", plot_bgcolor="#1e293b", font=dict(color="#f8fafc"))
+        st.plotly_chart(fig_c, use_container_width=True)
+
+    # 스냅샷 테이블
+    st.markdown(f"##### 📋 {selected_snap['date']} 스냅샷 종목 전체 목록")
+    df_snap = pd.DataFrame(selected_snap["stocks"])
+    snap_display_cols = {
+        "date": "스냅샷일자",
+        "ticker": "티커",
+        "name": "기업명",
+        "status": "상태",
+        "canslim": "CANSLIM 점수",
+        "est_quarters": "흑전예상(분기)",
+        "rev_growth": "매출성장(YoY)",
+        "sbc_ratio": "SBC 비중(%)"
+    }
+    
+    st.dataframe(
+        df_snap.rename(columns=snap_display_cols),
+        use_container_width=True,
+        hide_index=True
+    )
+
+    # CSV 다운로드 버튼
+    csv_bytes = df_snap.rename(columns=snap_display_cols).to_csv(index=False).encode('utf-8-sig')
+    st.download_button(
+        label=f"📥 {selected_snap['date']} 스냅샷 CSV 다운로드",
+        data=csv_bytes,
+        file_name=f"turnaround_snapshot_{selected_snap['date']}.csv",
+        mime="text/csv"
+    )
+
+    st.markdown("---")
 
 
 # ----------------------------------------------------
