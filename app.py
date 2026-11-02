@@ -150,6 +150,7 @@ tab_part2, tab_history, tab_part1, tab_scanner, tab_automation = st.tabs([
 with tab_part2:
     st.markdown("#### 🎯 5단계 필터링 통과 유망주 (최종 압축 포트폴리오)")
     st.caption("현재 GAAP 영업손실이지만, EBITDA와 영업현금흐름(OCF)은 흑자로 돌아선 8분기 내 흑전 예상 종목들입니다.")
+    st.warning("이 목록은 저장된 고정 데이터입니다. 이번 YoY 계산 수정으로 재검증된 목록이 아닙니다. 최신 판정은 실시간 종목 스캐너에서 확인하세요.")
 
     # 사이드바 조건 적용 필터링
     df_part2 = pd.DataFrame(PART2_STOCKS)
@@ -342,6 +343,7 @@ with tab_part2:
 # TAB: 날짜별 누적 히스토리 (History & Changes)
 # ----------------------------------------------------
 with tab_history:
+    st.caption("과거에 저장된 스냅샷입니다. 매출 YoY 계산 수정에 따른 과거 재판정 결과가 아닙니다.")
     st.markdown("#### 📊 날짜별 턴어라운드 누적 히스토리 & 변동 이력 추적")
     st.caption("매일 미국 장 마감 후 공시 데이터를 바탕으로 누적된 스냅샷과 신규 편입/이탈 종목을 추적합니다.")
 
@@ -546,7 +548,10 @@ with tab_scanner:
                 st.error(f"❌ {input_ticker}의 재무 데이터를 불러올 수 없습니다. 올바른 미국 상장사 티커인지 확인해 주세요.")
             else:
                 pass_color = "#10b981" if res["pass_part2"] else "#ef4444"
-                pass_text = "🎉 파트 2 턴어라운드 조건 통과!" if res["pass_part2"] else "⚠️ 파트 2 조건 일부 미달"
+                if res["rev_growth_yoy"] is None:
+                    pass_text = "⚠️ 매출 YoY 확인 불가 — 통과 보류"
+                else:
+                    pass_text = "🎉 파트 2 턴어라운드 조건 통과!" if res["pass_part2"] else "⚠️ 파트 2 조건 일부 미달"
 
                 st.markdown(f"""
                 <div class="metric-card" style="border-left: 6px solid {pass_color}; margin-top: 1rem;">
@@ -560,7 +565,14 @@ with tab_scanner:
 
                 sc1, sc2, sc3, sc4 = st.columns(4)
                 with sc1:
-                    st.metric("매출 성장률 (YoY)", f"+{res['rev_growth_yoy']}%", delta="20% 이상 합격" if res['rev_growth_yoy'] >= 20 else "미달", delta_color="normal")
+                    growth = res["rev_growth_yoy"]
+                    st.metric(
+                        "매출 성장률 (YoY)",
+                        "확인 불가" if growth is None else f"{growth:+.2f}%",
+                        delta=("데이터 부족·비교 불가" if growth is None else
+                               "20% 이상 합격" if res["revenue_growth_pass"] else "미달"),
+                        delta_color="normal",
+                    )
                 with sc2:
                     st.metric("GAAP 영업손익", f"${res['op_income_m']}M", delta="적자 상태 (턴어라운드 전조)" if res['op_income_m'] < 0 else "이미 흑자")
                 with sc3:
@@ -568,7 +580,15 @@ with tab_scanner:
                 with sc4:
                     st.metric("흑전 추정 시점", f"{res['est_quarters_to_gaap']}분기 이내", delta="8분기(2년) 내 합격" if res['est_quarters_to_gaap'] <= 8 else "기간 초과", delta_color="normal")
 
-                st.markdown(f"**CANSLIM 종합 점수:** `{res['canslim']}점` | **SBC(주식보상비용) 매출 대비:** `{res['sbc_ratio']}%`")
+                if res["rev_growth_reason"]:
+                    st.warning(f"매출 YoY: {res['rev_growth_reason']}. 성장률 조건과 최종 통과를 인정하지 않으며 CANSLIM 점수는 산정하지 않습니다.")
+                else:
+                    st.caption(
+                        f"비교 결산일: {res['revenue_period']} / 전년 동기 {res['revenue_prior_year_period']} | "
+                        "성장률 판정과 CANSLIM 계산은 반올림 전 YoY를 사용합니다."
+                    )
+                canslim_text = "산정 불가 (매출 YoY 미확인)" if res["canslim"] is None else f"{res['canslim']}점"
+                st.markdown(f"**CANSLIM 종합 점수:** `{canslim_text}` | **SBC(주식보상비용) 매출 대비:** `{res['sbc_ratio']}%`")
 
 
 # ----------------------------------------------------

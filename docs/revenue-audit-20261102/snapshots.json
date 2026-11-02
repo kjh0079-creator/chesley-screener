@@ -1,0 +1,1907 @@
+{
+  "source": "Yahoo Finance via yfinance",
+  "yfinance_version": "1.7.0",
+  "baseline_commit": "afca0ebc3b627011bc416fde29925d525b89de67",
+  "snapshots": [
+    {
+      "ticker": "AEHR",
+      "captured_at_utc": "2026-11-02T01:14:20.341252+00:00",
+      "info": {
+        "shortName": "Aehr Test Systems",
+        "sector": "Technology",
+        "marketCap": 1792682496,
+        "currentPrice": 54.89,
+        "regularMarketPrice": 54.89,
+        "fiftyTwoWeekHigh": 147.4,
+        "heldPercentInstitutions": 0.76959,
+        "ebitda": -11344000,
+        "longBusinessSummary": "Aehr Test Systems, Inc. provides test solutions for testing, burn-in, and semiconductor devices at wafer level, singulated die, and package level in the United States, Asia, Europe, and the Middle East. The company offers FOX-XP and FOX-NP systems, which are full wafer contact and singulated die/module test and burn-in systems that test, burn-in, and stabilize a range of devices, including silicon carbide-based (SIC) and gallium nitride (GAN) power semiconductors; 2D and 3D sensors used in mobile phones, tablets, and other computing devices; memory semiconductors; processors; microcontrollers; systems-on-a-chip; and photonics and integrated optical devices used in AI. It also provides the FOX-CP system, a single-wafer compact test solution for logic, memory, and photonic devices; and the FOX WaferPak Contactor, a full wafer contactor capable of testing wafers up to 300mm that enables integrated circuit manufacturers to perform test, burn-in, and stabilization of full wafers on the FOX-P systems. In addition, the company offers the FOX DiePak Carrier, which allows testing, burn-in, and stabilization of singulated bare die and modules; FOX WaferPak Aligner; and FOX DiePak Loader. Further, it provides system installation and repair, applications engineering support, spare parts inventories, customer training, and documentation services. The company sells its products in the United States, Germany, Japan, the Philippines, and Taiwan through distributors and sales representatives. It serves semiconductor manufacturers, semiconductor contract assemblies, electronics manufacturers, and burn-in and test service companies. Aehr Test Systems, Inc. was incorporated in 1977 and is headquartered in Fremont, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-05-31T00:00:00.000",
+          "2026-02-28T00:00:00.000",
+          "2025-11-30T00:00:00.000",
+          "2025-08-31T00:00:00.000",
+          "2025-05-31T00:00:00.000",
+          "2025-02-28T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -329000.0,
+            -3369000.0,
+            -3990000.0,
+            -2925000.0,
+            -1320000.0,
+            null
+          ],
+          [
+            -1206000.0,
+            -4229000.0,
+            -4861000.0,
+            -3847000.0,
+            -2340000.0,
+            null
+          ],
+          [
+            18835000.0,
+            10313000.0,
+            9884000.0,
+            10969000.0,
+            14089000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-05-31T00:00:00.000",
+          "2026-02-28T00:00:00.000",
+          "2025-11-30T00:00:00.000",
+          "2025-08-31T00:00:00.000",
+          "2025-05-31T00:00:00.000",
+          "2025-02-28T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            1832000.0,
+            -3689000.0,
+            -1171000.0,
+            -282000.0,
+            -2302000.0,
+            null
+          ],
+          [
+            1865000.0,
+            1384000.0,
+            1841000.0,
+            1671000.0,
+            1421000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "U",
+      "captured_at_utc": "2026-11-02T01:14:25.339848+00:00",
+      "info": {
+        "shortName": "Unity Software Inc.",
+        "sector": "Technology",
+        "marketCap": 16591352832,
+        "currentPrice": 37.7,
+        "regularMarketPrice": 37.7,
+        "fiftyTwoWeekHigh": 52.15,
+        "heldPercentInstitutions": 0.86608005,
+        "ebitda": 146200000,
+        "longBusinessSummary": "Unity Software Inc. operates a platform to develop, deploy, and grow games and interactive experiences for mobile phones, PCs, consoles, and extended reality devices in the United States, China, Hong Kong, Taiwan, Europe, the Middle East, Africa, the Asia Pacific, Canada, and Latin America. The company's platform offers artificial intelligence solutions that support developers through the entire development lifecycle, which includes prototyping, live service operation, user acquisition, and monetization. It also provides Create Solutions, a set of tools and services used to build, ship, and run real-time 2D and 3D content; and Grow Solutions, which allows customers to grow and engage their user base and monetize their content. In addition, the company offers enterprise support and consumption services; professional services, including consulting, platform integration, training, and custom application and workflow development services; and advertising and game publishing services. It provides its solutions directly through its online store, field sales operations, independent distributors, and resellers. The company serves enterprises, mid-market companies, government, and non-profit institutions; mid-sized, small, and independent businesses; and individuals from various industries. Unity Software Inc. was founded in 2004 and is headquartered in San Francisco, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            71197000.0,
+            -220694000.0,
+            40862000.0,
+            24485000.0,
+            -1987000.0
+          ],
+          [
+            -32219000.0,
+            -351413000.0,
+            -106510000.0,
+            -125856000.0,
+            -118752000.0
+          ],
+          [
+            546468000.0,
+            508238000.0,
+            503089000.0,
+            470615000.0,
+            440944000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            205622000.0,
+            71286000.0,
+            121435000.0,
+            155398000.0,
+            133096000.0,
+            null
+          ],
+          [
+            79948000.0,
+            77165000.0,
+            92852000.0,
+            91968000.0,
+            101604000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "FSLY",
+      "captured_at_utc": "2026-11-02T01:14:25.345180+00:00",
+      "info": {
+        "shortName": "Fastly, Inc.",
+        "sector": "Technology",
+        "marketCap": 3682219520,
+        "currentPrice": 23.115,
+        "regularMarketPrice": 23.115,
+        "fiftyTwoWeekHigh": 34.82,
+        "heldPercentInstitutions": 1.00825,
+        "ebitda": -38510000,
+        "longBusinessSummary": "Fastly, Inc. operates an edge cloud platform for processing, serving, and securing its customer's applications in the United States, the Asia Pacific, Europe, and internationally. The edge cloud is a category of Infrastructure as a Service that enables developers to build, secure, and deliver digital experiences at the edge of the internet. The company offers network services to speed up and optimize the delivery of web and application traffic; content delivery network, such as dynamic site acceleration, origin shield, instant purge, surrogate keys, programmatic control, content compression, reliability features, fanout, domainr, modern protocols and performance services; staging environment; and video/ streaming solutions and services, including live streaming, live event monitoring, video on demand, cache reservation, and media shield. It also provides security solutions, such as DDoS protection, next-gen WAF, bot management, API and ATO protection, advanced rate limiting, privacy, and compliance services; load balancing; image optimization; and origin connect. In addition, the company offers professional services comprising managed and response security services; managed CDN; and support plans services. It serves customers operating in ecommerce, streaming media, gaming, digital publishing, and high tech to financial services industries. The company was formerly known as SkyCache, Inc. and changed its name to Fastly, Inc. in May 2012. Fastly, Inc. was incorporated in 2011 and is headquartered in San Francisco, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            2991000.0,
+            -7179000.0,
+            5924000.0,
+            -5365000.0,
+            -13980000.0
+          ],
+          [
+            -14433000.0,
+            -23895000.0,
+            -15090000.0,
+            -28788000.0,
+            -36528000.0
+          ],
+          [
+            183317000.0,
+            173021000.0,
+            172612000.0,
+            158223000.0,
+            148709000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            39334000.0,
+            28866000.0,
+            22434000.0,
+            28924000.0,
+            25798000.0
+          ],
+          [
+            35172000.0,
+            34981000.0,
+            32277000.0,
+            33129000.0,
+            26335000.0
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "STLN",
+      "captured_at_utc": "2026-11-02T01:14:25.336726+00:00",
+      "info": {
+        "shortName": "Starling Oncology, Inc.",
+        "sector": "Healthcare",
+        "marketCap": 665512256,
+        "currentPrice": 6.53,
+        "regularMarketPrice": 6.53,
+        "fiftyTwoWeekHigh": 7.13,
+        "heldPercentInstitutions": 0.46518,
+        "ebitda": -19281000,
+        "longBusinessSummary": "Starling Oncology, Inc., an oncology company, provides various oncology services in the United States. It operates through three segments: Specialty pharmacy, Patient Services, and Clinical Trials & Other. The company offers physician services, in-house infusion, in-house specialty pharmacy, clinical trials, radiation therapy, and outpatient blood product transfusion services, as well as educational seminars, support groups, counseling services, and 24/7 patient assistance and support services. It also manages clinical trials and palliative care programs; operates combined community clinics and infusion suites; and operates a specialty pharmacy that includes both in-office and mail-order dispensing for complementary oral and self-injectable medications taken by patients concurrent with their in-office cancer therapies. It serves adult and senior cancer patients. The company was formerly known as The Oncology Institute, Inc. and changed its name to Starling Oncology, Inc. in August 2026. Starling Oncology, Inc. was founded in 2007 and is headquartered in Cerritos, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -6092000.0,
+            1058000.0,
+            -3960000.0,
+            -12861000.0,
+            -13465000.0
+          ],
+          [
+            -4616000.0,
+            -6513000.0,
+            -6907000.0,
+            -8054000.0,
+            -11211000.0
+          ],
+          [
+            161282000.0,
+            147441000.0,
+            141957000.0,
+            136564000.0,
+            119802000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            11940000.0,
+            -2215000.0,
+            3233000.0,
+            -12630000.0,
+            -10202000.0,
+            null
+          ],
+          [
+            1070000.0,
+            1686000.0,
+            1317000.0,
+            1024000.0,
+            752000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "XMTR",
+      "captured_at_utc": "2026-11-02T01:14:20.927157+00:00",
+      "info": {
+        "shortName": "Xometry, Inc.",
+        "sector": "Industrials",
+        "marketCap": 5368352768,
+        "currentPrice": 93.65,
+        "regularMarketPrice": 93.65,
+        "fiftyTwoWeekHigh": 112.94,
+        "heldPercentInstitutions": 1.0124199,
+        "ebitda": -10457000,
+        "longBusinessSummary": "Xometry, Inc. operates an artificial intelligence (AI) powered online manufacturing marketplace in the United States and internationally. The company's marketplace uses AI to assist buyers to source custom-manufactured parts and assemblies and attain instant pricing and lead times. It operates Xometry marketplace, an AI powered online marketplace that connects buyers with suppliers of manufacturing services; Xometry instant quoting engine, which prices transactions based on volume, manufacturing process, material, and location; and Thomasnet, an industrial sourcing platform that features an online directory of industrial suppliers, products, and services, as well as digital marketing services and insights to manufacturers and industrial services providers. The company also provides cloud-based systems, such as Workcenter, a financial service product that facilitates payments and a cloud-based manufacturing execution system; and Teamspace, a cloud-based solution within the Xometry platform that enables customers to collaborate with other users on projects and custom part orders. In addition, it offers computer numerical control (CNC) machining, injection molding, 3D printing, sheet forming and cutting, die casting, urethane casting, tube cutting, and tube bending, as well as finishing, rapid prototyping, and production services. It serves the aerospace, industrial, medical devices, automotive, consumer goods, defense, government, energy, education, and robotics industries. The company was formerly known as NextLine Manufacturing Corp. and changed its name to Xometry, Inc. in June 2015. Xometry, Inc. was incorporated in 2013 and is headquartered in North Bethesda, Maryland."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            2134000.0,
+            1178000.0,
+            -1756000.0,
+            -5336000.0,
+            -20768000.0
+          ],
+          [
+            -5545000.0,
+            -5220000.0,
+            -8776000.0,
+            -11010000.0,
+            -10290000.0
+          ],
+          [
+            229280000.0,
+            205138000.0,
+            192397000.0,
+            180715000.0,
+            162547000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            2919000.0,
+            14623000.0,
+            4412000.0,
+            5792000.0,
+            -427000.0,
+            null
+          ],
+          [
+            11346000.0,
+            8327000.0,
+            10377000.0,
+            10748000.0,
+            7895000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "NTRA",
+      "captured_at_utc": "2026-11-02T01:14:21.529359+00:00",
+      "info": {
+        "shortName": "Natera, Inc.",
+        "sector": "Healthcare",
+        "marketCap": 59718930432,
+        "currentPrice": 414.3,
+        "regularMarketPrice": 414.3,
+        "fiftyTwoWeekHigh": 437.408,
+        "heldPercentInstitutions": 0.96989,
+        "ebitda": -224420992,
+        "longBusinessSummary": "Natera, Inc., a diagnostics company, engages in the development and commercialization of molecular testing services worldwide. It offers Signatera, a personalized ctDNA blood test for MRD assessment, early recurrence monitoring, and evaluation of treatment response in patients previously diagnosed with cancer; Latitude, a blood-based MRD test for colorectal cancer; Altera, a tissue based comprehensive genomic profiling test; and Empower, a hereditary cancer screening test. The company also provides Panorama, a non-invasive prenatal test; Horizon, a carrier screening test; Fetal Focus, a single-gene NIPT, or sgNIPT, that screens for 21 single-gene inherited conditions; and Vistara, a single-gene NIPT, which screens for 25 single-gene conditions. In addition, it offers Anora, which tests and analyzes miscarriage tissue from women who have experienced one or more pregnancy losses; Empower, a hereditary cancer screening test; Prospera, a test to assess active rejection in patients who have undergone solid organ transplantation; Renasight, a kidney gene panel test; and Constellation software, a cloud-based distribution model. Further, the company provides NateraCore, a platform to support the patient and provider experience; phlebotomy services; and EMR integration services. The company serves independent laboratories, national and regional reference laboratories, medical centers and physician practices for its screening tests, research laboratories, and pharmaceutical companies through its direct sales force and laboratory distribution partners, as well as Constellation licensees under its cloud-based distribution model. It has a partnership agreement with BGI Genomics Co., Ltd. to develop, manufacture, and commercialize NGS-based genetic testing assays for clinical and commercial use. The company was formerly known as Gene Security Network, LLC and changed its name to Natera, Inc. in January 2012. Natera, Inc. was founded in 2003 and is headquartered in Austin, Texas."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -45152000.0,
+            -63690000.0,
+            1761000.0,
+            -76000000.0,
+            -89775000.0,
+            null
+          ],
+          [
+            -75792000.0,
+            -93516000.0,
+            -22785000.0,
+            -97576000.0,
+            -110372000.0,
+            null
+          ],
+          [
+            752750000.0,
+            696644000.0,
+            665498000.0,
+            592183000.0,
+            546600000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            54793000.0,
+            40171000.0,
+            73888000.0,
+            59387000.0,
+            37574000.0,
+            null
+          ],
+          [
+            103097000.0,
+            95107000.0,
+            92582000.0,
+            90637000.0,
+            93358000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "GKOS",
+      "captured_at_utc": "2026-11-02T01:14:22.313932+00:00",
+      "info": {
+        "shortName": "Glaukos Corporation",
+        "sector": "Healthcare",
+        "marketCap": 14065177600,
+        "currentPrice": 237.6,
+        "regularMarketPrice": 237.6,
+        "fiftyTwoWeekHigh": 248.75,
+        "heldPercentInstitutions": 1.06828,
+        "ebitda": -20012000,
+        "longBusinessSummary": "Glaukos Corporation, an ophthalmic pharmaceutical and medical technology company, develops therapies for the treatment of glaucoma, corneal disorders, and retinal diseases in the United States and internationally. It offers iStent and iStent inject W micro-bypass stents designed to treat mild-to-moderate open-angle glaucoma through the restoration of the natural physiologic outflow pathways for aqueous humor. The company also provides iStent infinite indicated for use in the treatment of patients with glaucoma uncontrolled by prior medical and surgical therapy; and iDose TR, an intracameral procedural pharmaceutical therapy indicated for the reduction of intraocular pressure in patients with open-angle glaucoma or ocular hypertension. In addition, the company develops iLink, a device used for the treatment of keratoconus without the removal of the epithelium; ILution, a platform of cream-based drug formulation applied to the outer surface of the eyelid for drop less transdermal delivery of pharmaceutically active compounds for the treatment of anterior segment eye disorders; and retinal XR platform to treat age-related macular degeneration, diabetic macular edema, retinal vein occlusion, and other posterior segment retinal diseases. It sells its products to ambulatory surgery centers, hospitals, and physician private practices through a direct sales organization, direct sales subsidiaries, and distributors. The company was formerly known as Transdx, Inc. Glaukos Corporation was incorporated in 1998 and is headquartered in Aliso Viejo, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-09-30T00:00:00.000",
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            13439000.0,
+            -6120000.0,
+            -5292000.0,
+            -125442000.0,
+            -4634000.0,
+            null
+          ],
+          [
+            828000.0,
+            -15767000.0,
+            -19856000.0,
+            -139868000.0,
+            -16365000.0,
+            null
+          ],
+          [
+            211030000.0,
+            185610000.0,
+            150571000.0,
+            143121000.0,
+            133537000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-09-30T00:00:00.000",
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            38570000.0,
+            14823000.0,
+            -12526000.0,
+            6843000.0,
+            -10090000,
+            null,
+            null
+          ],
+          [
+            17773000.0,
+            28865000.0,
+            19144000.0,
+            17300000.0,
+            14913000,
+            null,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "RBRK",
+      "captured_at_utc": "2026-11-02T01:14:22.959713+00:00",
+      "info": {
+        "shortName": "Rubrik, Inc.",
+        "sector": "Technology",
+        "marketCap": 25553616896,
+        "currentPrice": 124.15,
+        "regularMarketPrice": 124.15,
+        "fiftyTwoWeekHigh": 139.92,
+        "heldPercentInstitutions": 0.81123,
+        "ebitda": -263159008,
+        "longBusinessSummary": "Rubrik, Inc. provides data security solutions to individuals and businesses worldwide. The company offers enterprise data protection, unstructured data protection, cloud data protection, SaaS data protection solutions, and identity provider services protection; data threat analytics; data security posture; identity recovery and resilience services; and cyber recovery solutions. It also provides RUBY, an AI agent for cyber resilience designed to scale data security operations through automation; SENTRYAI, a proprietary AI deep learning-based platform for system health monitoring; and RUBRIK UNIVERSITY, which includes instructor-led training with hands-on labs, on-demand e-learning courses, and certification exams, as well as offers cloud services. It serves financial, retail, trade, transportation, energy, industrial, healthcare and life science, education, technology, media, communications, services, and public sectors. Rubrik, Inc. has strategic collaboration with MEDITECH to offer native cyber resilience to MEDITECH self-hosted cloud and on-premises solutions. Rubrik, Inc. was formerly known as Scaledata, Inc. and changed its name to Rubrik, Inc. in October 2014. The company was incorporated in 2013 and is based in Palo Alto, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -42654000.0,
+            -24065000.0,
+            -58829000.0,
+            -49928000.0,
+            -80432000.0
+          ],
+          [
+            -71902000.0,
+            -52634000.0,
+            -82379000.0,
+            -75483000.0,
+            -94463000.0
+          ],
+          [
+            427260000.0,
+            387068000.0,
+            377684000.0,
+            350166000.0,
+            309860000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000",
+          "2025-04-30T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            76846000.0,
+            81689000.0,
+            93045000,
+            85484000,
+            64724000.0,
+            null
+          ],
+          [
+            101018000.0,
+            73368000.0,
+            84910000,
+            82467000,
+            88457000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "BRZE",
+      "captured_at_utc": "2026-11-02T01:14:23.671386+00:00",
+      "info": {
+        "shortName": "Braze, Inc.",
+        "sector": "Technology",
+        "marketCap": 5196939264,
+        "currentPrice": 45.75,
+        "regularMarketPrice": 45.75,
+        "fiftyTwoWeekHigh": 45.945,
+        "heldPercentInstitutions": 0.94135004,
+        "ebitda": -86197000,
+        "longBusinessSummary": "Braze, Inc. operates a customer engagement platform that provides interactions between consumers and brands worldwide. It offers Braze software development kits that automatically manage data ingestion and deliver mobile and web notifications, in-application/in-browser interstitial messages, and content cards; REST API to import or export data or to trigger workflows between Braze and brands' existing technology stacks; Partner Data Integrations, that allow brands to sync user cohorts from partners; Data Transformation, in which brands can programmatically sync and transform user data; Braze Cloud Data Ingestion that offers direct connections to cloud services and data warehouses, marketing, product, and growth teams; Braze Currents to stream data in real time; and Snowflake Data Sharing to track and store data. It also provides segmentation that define reusable segments of consumers based upon attributes, events, or predictive propensity scores; segment insights, which allows customers to analyze how segments are performing relative to each other across a set of pre-selected key performance indicators; and predictive suite that allows customers to identify groups of consumers that are of critical business value. In addition, the company offers Canvas, an orchestration tool; campaigns, which allows customers; event and API triggering; marketing pressure management; and reporting and analytics, as well as content generation and quality assurance platform, content management, catalogs, templating language, connected content, and intelligent timing and channel products. Further, it provides decisioning studio; agent console; liquid assistant and AI copywriter; personalized variant; AI item recommendations; and MCP Servers. The company was formerly known as Appboy, Inc. and changed its name to Braze, Inc. in November 2017. Braze, Inc. was incorporated in 2011 and is headquartered in New York, New York."
+      },
+      "financials": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -11841000.0,
+            -21230000.0,
+            -22268000.0,
+            -31558000.0,
+            -33987000.0
+          ],
+          [
+            -18123000.0,
+            -27514000.0,
+            -28237000.0,
+            -37545000.0,
+            -38753000.0
+          ],
+          [
+            227230000.0,
+            210999000.0,
+            205170000.0,
+            190842000.0,
+            180111000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000",
+          "2025-04-30T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            24212000.0,
+            28126000.0,
+            19375000.0,
+            20967000.0,
+            6952000.0,
+            null
+          ],
+          [
+            35704000.0,
+            35804000.0,
+            37712000.0,
+            37828000.0,
+            37555000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "SNOW",
+      "captured_at_utc": "2026-11-02T01:14:24.313559+00:00",
+      "info": {
+        "shortName": "Snowflake Inc.",
+        "sector": "Technology",
+        "marketCap": 107985018880,
+        "currentPrice": 306.08,
+        "regularMarketPrice": 306.08,
+        "fiftyTwoWeekHigh": 384.56,
+        "heldPercentInstitutions": 0.81232,
+        "ebitda": -1036284992,
+        "longBusinessSummary": "Snowflake Inc. provides a cloud-based data platform for various organizations in the United States and internationally. The company's platform includes artificial intelligence (AI) Data Cloud, which enables customers to consolidate data into a single source of truth to drive meaningful business insights, build data applications, and share data and data products, as well as applies AI for solving business problems. It serves financial services, advertising, media and entertainment, retail and consumer goods, healthcare and life sciences, manufacturing, technology, telecom, travel and hospitality, and government and defense industries, as well as the public sector. the company has a collaboration with OpenAI, L.L.C. for the development of AI solutions for joint enterprise customers that deliver tangible return on investment. The company was formerly known as Snowflake Computing, Inc. and changed its name to Snowflake Inc. in April 2019. Snowflake Inc. was incorporated in 2012 and is based in Menlo Park, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -117580000.0,
+            -226975000.0,
+            -240896000.0,
+            -227968000.0,
+            -240957000.0
+          ],
+          [
+            -262967000.0,
+            -326154000.0,
+            -318159000.0,
+            -329473000.0,
+            -340276000.0
+          ],
+          [
+            1546793000.0,
+            1390951000.0,
+            1283994000.0,
+            1212909000.0,
+            1144969000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000",
+          "2025-04-30T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            91357000.0,
+            243223000.0,
+            781154000,
+            137519000.0,
+            74896000.0,
+            null
+          ],
+          [
+            423582000.0,
+            402470000.0,
+            403592000,
+            412278000.0,
+            404217000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "IRTC",
+      "captured_at_utc": "2026-11-02T01:14:24.911859+00:00",
+      "info": {
+        "shortName": "iRhythm Holdings, Inc.",
+        "sector": "Healthcare",
+        "marketCap": 4066646016,
+        "currentPrice": 123.37,
+        "regularMarketPrice": 123.37,
+        "fiftyTwoWeekHigh": 192.47,
+        "heldPercentInstitutions": 1.07818,
+        "ebitda": 17695000,
+        "longBusinessSummary": "iRhythm Holdings, Inc., a digital healthcare company, engages in the design, development, and commercialization of device-based technology that provides ambulatory cardiac monitoring services to diagnose arrhythmias in the United States. The company offers Zio ambulatory cardiac monitoring services, including long-term and short-term continuous monitoring and mobile cardiac telemetry monitoring services. It also provides Zio Monitor System, a prescription-only remote electrocardiogram (ECG) monitoring system consisting a patch ECG monitor that records the electric signal from the heart continuously for up to 14 days; Zio XT System, a prescription-only remote ECG monitoring system that consists of the Zio XT patch that records the electric signal from the heart continuously for up to 14 days; and Zio ECG Utilization Software System, which supports the capture and analysis of ECG data. In addition, the company offers Zio AT System, a prescription-only remote ECG monitoring system, which consists of the Zio AT patch that records the electric signal from the heart continuously for up to 14 days, as well as incorporates the Zio AT wireless gateway to provide connectivity between the patch and the ZEUS System during the patient wear period. It has a development collaboration agreement with BioIS to develop and commercialize pulse oximetry, accelerometry, and trending non-invasive blood pressure technologies for use within ambulatory cardiac monitoring products and services. The company was formerly known as iRhythm Technologies, Inc. and changed its name to iRhythm Holdings, Inc. in January 2026. iRhythm Holdings, Inc. was incorporated in 2006 and is headquartered in San Francisco, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            8878000.0,
+            -4408000.0,
+            18385000.0,
+            3968000.0,
+            -5366000.0,
+            null
+          ],
+          [
+            11408000.0,
+            -16185000.0,
+            4265000.0,
+            -8429000.0,
+            -16229000.0,
+            null
+          ],
+          [
+            224172000.0,
+            199390000.0,
+            208890000.0,
+            192884000.0,
+            186687000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            51080000.0,
+            -26173000.0,
+            26212000,
+            34883000.0,
+            27659000.0,
+            null
+          ],
+          [
+            20039000.0,
+            21491000.0,
+            21106000,
+            21006000.0,
+            22827000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "QXO",
+      "captured_at_utc": "2026-11-02T01:14:25.591714+00:00",
+      "info": {
+        "shortName": "QXO, Inc.",
+        "sector": "Industrials",
+        "marketCap": 11453896704,
+        "currentPrice": 11.04,
+        "regularMarketPrice": 11.04,
+        "fiftyTwoWeekHigh": 27.61,
+        "heldPercentInstitutions": 0.9454,
+        "ebitda": 591900032,
+        "longBusinessSummary": "QXO, Inc. distributes roofing, waterproofing and complementary building products in the United States and Canada. It offers roofing and siding materials for residential construction, such as asphalt shingles, metal roofing, wood roofing, tile roofing, slate roofing, roofing accessories, and roofing insulation; and siding materials, including vinyl siding aluminum siding, steel siding, fiber cement siding, wood and composite siding, trim and accessories, and gutters and accessories. The company also provides commercial roofing and siding products built-up roofing, modified roofing, EPDM roofing, PVC roofing, low-slope metal roofing TPO roofing, and commercial accessories; commercial waterproofing, concrete restoration and parking, public works, DOT and industrial, fire protection, wall systems, and safety and tools, as well as glass, glazing, and fenestration. In addition, it offers building materials; exterior and interior materials; and tools and equipment. The company provides its products under Atlas, Carlisle, CertainTeed, Elevate, Exterior Portfolio, GAF, IKO, James Hardie, LP SmartSide, Owens Corning, Royal, Tamko, TRI-BUILT, and Velux brands. It serves professional contractors, home builders, building owners, lumberyards, and retailers. The company was formerly known as SilverSun Technologies, Inc. and changed its name to QXO, Inc. in June 2024. QXO, Inc. is headquartered in Greenwich, Connecticut."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            185800000.0,
+            -59600000.0,
+            170400000.0,
+            183600000.0,
+            -78000000.0,
+            null
+          ],
+          [
+            -42000000.0,
+            -251900000.0,
+            -69500000.0,
+            25800000.0,
+            -163000000.0,
+            null
+          ],
+          [
+            3246000000.0,
+            1730200000.0,
+            2194100000.0,
+            2728300000.0,
+            1906000000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            -216600000.0,
+            70600000.0,
+            186600000.0,
+            212800000.0,
+            -174500000.0,
+            null
+          ],
+          [
+            28800000.0,
+            39200000.0,
+            28200000.0,
+            31300000.0,
+            64800000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "BKSY",
+      "captured_at_utc": "2026-11-02T01:14:26.114332+00:00",
+      "info": {
+        "shortName": "BlackSky Technology Inc.",
+        "sector": "Industrials",
+        "marketCap": 731327040,
+        "currentPrice": 17.87,
+        "regularMarketPrice": 17.87,
+        "fiftyTwoWeekHigh": 52.88,
+        "heldPercentInstitutions": 0.7899,
+        "ebitda": -16745000,
+        "longBusinessSummary": "BlackSky Technology Inc. operates as a space-based technology company in the United States and internationally. The company offers space-based intelligence and artificial intelligence (AI) services, mission solutions, and advanced technology programs consisting of cloud computing and hosting services, direct materials to build and test specific components, and internal labor for service solutions that enhance customer adoption and operational integration of the company's technology. It also provides BlackSky Spectra, an AI-enabled software platform that processes a range of observations by integrating data from the company's proprietary satellite constellation and from other third-party sensors, such as synthetic aperture radar and radio frequency satellites, GPS-enabled terrestrial data sources, and Internet of Things-connected devices. In addition, the company offers a range of services related to object, change and anomaly detection, site monitoring, and enhanced analytics, which help detect key pattern of life changes in critical locations, including ports, airports, and construction sites; retail activity; commodities stockpiles; and other sites that contain critical commodities and supply chain inventory. Further, it develops and delivers customized advanced satellites and payload systems. The company's products and services are used in national security, supply chain resilience, economic intelligence, and other critical decision-making requirements. It serves the United States federal government and its agencies; international governments, agencies, and organizations; and the commercial and industrial infrastructure markets, including energy and utilities, insurance, commodities, mining, manufacturing, logistics, supply chain management, agriculture, environmental monitoring, disaster and risk management, engineering and construction, retail, and consumer behavior. BlackSky Technology Inc. was founded in 2014 and is headquartered in Herndon, Virginia."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -8781000.0,
+            -16328000.0,
+            11398000.0,
+            -3248000.0,
+            -30337000.0
+          ],
+          [
+            -7799000.0,
+            -18537000.0,
+            -4156000.0,
+            -16826000.0,
+            -13940000.0
+          ],
+          [
+            33316000.0,
+            20774000.0,
+            35214000.0,
+            19618000.0,
+            22199000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            -3525000.0,
+            -2356000.0,
+            -9319000.0,
+            -38957000,
+            -7280000.0,
+            null
+          ],
+          [
+            4312000.0,
+            4105000.0,
+            4227000.0,
+            3654000,
+            3454000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "MP",
+      "captured_at_utc": "2026-11-02T01:14:26.061012+00:00",
+      "info": {
+        "shortName": "MP Materials Corp.",
+        "sector": "Basic Materials",
+        "marketCap": 7047479808,
+        "currentPrice": 39.57,
+        "regularMarketPrice": 39.57,
+        "fiftyTwoWeekHigh": 76.8,
+        "heldPercentInstitutions": 0.78378,
+        "ebitda": 40676000,
+        "longBusinessSummary": "MP Materials Corp., together with its subsidiaries, produces rare earth materials in the Western Hemisphere. It operates in two segments, Materials and Magnetics. The Materials segment owns and operates the Mountain Pass Rare Earth Mine and Processing facility located near Mountain Pass, San Bernardino County, California. The Magnetics segment produces magnetic precursor products, including NdPr metal; and manufactures NdFeB permanent magnets. MP Materials Corp. was founded in 2017 and is headquartered in Las Vegas, Nevada."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            15747000.0,
+            28341000.0,
+            45052000.0,
+            -27369000.0,
+            -16533000.0,
+            null
+          ],
+          [
+            -17601000.0,
+            -18233000.0,
+            -2555000.0,
+            -65610000.0,
+            -43121000.0,
+            null
+          ],
+          [
+            108490000.0,
+            90649000.0,
+            52685000.0,
+            53553000.0,
+            57393000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            6848000.0,
+            -1909000.0,
+            -46854000.0,
+            -42048000.0,
+            -3655000.0,
+            null
+          ],
+          [
+            11287000.0,
+            12930000.0,
+            9572000.0,
+            7686000.0,
+            5552000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "CSTL",
+      "captured_at_utc": "2026-11-02T01:14:26.067172+00:00",
+      "info": {
+        "shortName": "Castle Biosciences, Inc.",
+        "sector": "Healthcare",
+        "marketCap": 1135219712,
+        "currentPrice": 37.16,
+        "regularMarketPrice": 37.16,
+        "fiftyTwoWeekHigh": 44.28,
+        "heldPercentInstitutions": 0.90365,
+        "ebitda": -16516000,
+        "longBusinessSummary": "Castle Biosciences, Inc., a molecular diagnostics company, provides test solutions for the diagnosis and treatment of dermatologic cancers, Barrett's esophagus (BE), atopic dermatitis (AD), and uveal melanoma. The company offers DecisionDx-Melanoma, a risk stratification gene expression profile (GEP) test that predicts the likelihood of a positive sentinel lymph node and the risk of metastasis for patients with invasive cutaneous melanoma; TissueCypher, a risk stratification spatialomics test to predict future development of high-grade dysplasia and/or esophageal cancer in patients with non-dysplastic, indefinite dysplasia, and low-grade dysplasia BE; AdvanceAD-Tx, a non-invasive GEP test which is designed to guide systemic treatment selection for patients aged 12 years and older with moderateto-severe AD; DecisionDx-SCC, a GEP test for cutaneous squamous cell carcinoma; and MyPath Melanoma, a diagnostic GEP test for use in patients with difficult-to-diagnose melanocytic lesions. It also provides DecisionDx-UM, a risk stratification GEP test that predicts the risk of metastasis for patients with uveal melanoma. The company offers its products to dermatology and gastroenterology markets. The company was incorporated in 2007 and is headquartered in Friendswood, Texas."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            2573000.0,
+            -10350000.0,
+            1087000.0,
+            3454000.0,
+            3292000.0
+          ],
+          [
+            -3070000.0,
+            -18407000.0,
+            -3827000.0,
+            -6804000.0,
+            -4251000.0
+          ],
+          [
+            103546000.0,
+            83679000.0,
+            87010000.0,
+            83043000.0,
+            86188000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            15201000.0,
+            -22129000.0,
+            26931000.0,
+            22631000.0,
+            20821000.0,
+            null
+          ],
+          [
+            11589000.0,
+            9776000.0,
+            11406000.0,
+            12100000.0,
+            11208000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "TE",
+      "captured_at_utc": "2026-11-02T01:14:26.265551+00:00",
+      "info": {
+        "shortName": "T1 Energy Inc.",
+        "sector": "Industrials",
+        "marketCap": 808646976,
+        "currentPrice": 2.7,
+        "regularMarketPrice": 2.7,
+        "fiftyTwoWeekHigh": 12.49,
+        "heldPercentInstitutions": 0.79993,
+        "ebitda": -94053000,
+        "longBusinessSummary": "T1 Energy Inc. provides energy solutions for solar modules and cells in the United States, Norway and internationally. It manufactures and sells photovoltaic solar modules. The company was formerly known as FREYR Battery, Inc. and changed its name to T1 Energy Inc. in February 2025. T1 Energy Inc. is headquartered in Austin, Texas."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -4404000.0,
+            34949000.0,
+            -122113000.0,
+            -105249000.0,
+            -198000.0,
+            null
+          ],
+          [
+            -22781000.0,
+            -22505000.0,
+            -85398000.0,
+            -41515000.0,
+            -29951000.0,
+            null
+          ],
+          [
+            250128000.0,
+            177647000.0,
+            358554000.0,
+            210522000.0,
+            132767000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            -30105000.0,
+            -72874000.0,
+            42988000.0,
+            63858000.0,
+            33431000,
+            null
+          ],
+          [
+            5792000.0,
+            2738000.0,
+            4294000.0,
+            1883000.0,
+            1281000,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "ASTS",
+      "captured_at_utc": "2026-11-02T01:14:26.806691+00:00",
+      "info": {
+        "shortName": "AST SpaceMobile, Inc.",
+        "sector": "Technology",
+        "marketCap": 15944192000,
+        "currentPrice": 40.97,
+        "regularMarketPrice": 40.97,
+        "fiftyTwoWeekHigh": 133.86,
+        "heldPercentInstitutions": 0.55815,
+        "ebitda": -406319008,
+        "longBusinessSummary": "AST SpaceMobile, Inc., together with its subsidiaries, designs and develops the constellation of BlueBird satellites in the United States. The company provides a cellular broadband network in space to be accessible directly by smartphones for commercial use and other applications, as well as for government use. Its SpaceMobile service provides cellular broadband services to end-users who are out of terrestrial cellular coverage. The company was founded in 2017 and is headquartered in Midland, Texas."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -252065000.0,
+            -206519000.0,
+            -61189000.0,
+            -143192000.0,
+            -117784000.0,
+            null
+          ],
+          [
+            -171666000.0,
+            -149412000.0,
+            -72277000.0,
+            -79676000.0,
+            -72797000.0,
+            null
+          ],
+          [
+            31520000.0,
+            14735000.0,
+            54305000.0,
+            14739000.0,
+            1156000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            -97154000,
+            -48058000,
+            64969000.0,
+            -64462000.0,
+            -43478000.0,
+            null
+          ],
+          [
+            63467000,
+            55353000,
+            15152000.0,
+            13987000.0,
+            10525000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "PL",
+      "captured_at_utc": "2026-11-02T01:14:26.910850+00:00",
+      "info": {
+        "shortName": "Planet Labs PBC",
+        "sector": "Industrials",
+        "marketCap": 4901032448,
+        "currentPrice": 13.47,
+        "regularMarketPrice": 13.47,
+        "fiftyTwoWeekHigh": 51.76,
+        "heldPercentInstitutions": 0.8296,
+        "ebitda": -48402000,
+        "longBusinessSummary": "Planet Labs PBC engages in the design, construction, and launch of constellations of satellites with the intent of providing high-cadence geospatial data delivered to customers through an online platform in the United States and internationally. The company offers SuperDove satellites to create an always-online scanner for the planet, with the goal of imaging the Earth every day at a ground sampling distance (GSD) resolution of up to 3.5 meters. This combines planet monitoring with other scientific-grade radiometric data from public satellite data programs; and SkySat and Pelican satellites to capture a specified location several times per day, achieving a GSD resolution of up to 50 centimeters after processing, powered by an application programming interface. It also provides Tanager, a hyperspectral imaging satellite that delivers full-spectrum imagery across the visible and shortwave infrared regions, and the Earth Observation platform, which enables customers and partners to access, analyze, and act on its proprietary data catalog by discovering image tasking capacity, relevant data layers, extracting useful information, and delivering insights through custom-built solutions or GIS workflows via APIs and browser-based applications. In addition, the company's satellite services arrangements include designing and manufacturing customer-owned satellites, mission systems engineering, launch procurement, ground station infrastructure, satellite operations, and maintenance, as well as dedicated image tasking capacity on company-owned or customer-owned satellites. It serves agriculture, mapping, energy, forestry, finance, and insurance companies, as well as government agencies. Planet Labs PBC was founded in 2010 and is headquartered in San Francisco, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000",
+          "2025-04-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            3607000.0,
+            -125226000.0,
+            -138205000.0,
+            -47473000.0,
+            -11156000.0,
+            null
+          ],
+          [
+            -13509000.0,
+            -34888000.0,
+            -36002000.0,
+            -18340000.0,
+            -17960000.0,
+            null
+          ],
+          [
+            116052000.0,
+            94150000.0,
+            86822000.0,
+            81254000.0,
+            73386000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000",
+          "2025-04-30T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            52948000.0,
+            15440000.0,
+            20649000.0,
+            28593000.0,
+            67774000.0,
+            null
+          ],
+          [
+            17060000.0,
+            16461000.0,
+            15524000.0,
+            13473000.0,
+            13456000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "EVLV",
+      "captured_at_utc": "2026-11-02T01:14:26.847271+00:00",
+      "info": {
+        "shortName": "Evolv Technologies Holdings, In",
+        "sector": "Industrials",
+        "marketCap": 843596928,
+        "currentPrice": 4.69,
+        "regularMarketPrice": 4.69,
+        "fiftyTwoWeekHigh": 7.75,
+        "heldPercentInstitutions": 0.70725,
+        "ebitda": -2458000,
+        "longBusinessSummary": "Evolv Technologies Holdings, Inc. develops, manufactures, markets, and sells security screening products and specific services in the United States and internationally. It offers Evolv Express, that is designed to detect firearms, improvised explosive devices, and large tactical knives in unstructured people flows; Evolv eXpedite, an autonomous AI-based weapon detection system for bags being brought to venues by visitors in high clutter environments; and Evolv Insights Analytics Application which provides self-serve access, insights regarding visitor flow and arrival curves, location specific performance, system detection performance and alarm statistics, and comparisons across multiple business dimensions. The company serves various industries comprising education, healthcare, professional sports, notable performing arts and entertainment venues, major tourist destinations and cultural attractions, government and corporate offices, hospitality facilities, distribution facilities, large industrial workplaces, and houses of worship. Evolv Technologies Holdings, Inc. was founded in 2013 and is headquartered in Waltham, Massachusetts."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -1196000.0,
+            2717000.0,
+            18381000.0,
+            5458000.0,
+            -34748000.0,
+            null
+          ],
+          [
+            -7157000.0,
+            -5621000.0,
+            -24637000.0,
+            -6289000.0,
+            -9427000.0,
+            null
+          ],
+          [
+            43753000.0,
+            46328000.0,
+            38504000.0,
+            42850000.0,
+            32544000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            11902000.0,
+            -3179000.0,
+            15571000,
+            3524000.0,
+            2113000.0
+          ],
+          [
+            6853000.0,
+            5587000.0,
+            5280000,
+            5390000.0,
+            5547000.0
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "RBLX",
+      "captured_at_utc": "2026-11-02T01:14:27.005441+00:00",
+      "info": {
+        "shortName": "Roblox Corporation",
+        "sector": "Communication Services",
+        "marketCap": 30768517120,
+        "currentPrice": 42.99,
+        "regularMarketPrice": 42.99,
+        "fiftyTwoWeekHigh": 113.6,
+        "heldPercentInstitutions": 0.86393,
+        "ebitda": -769521984,
+        "longBusinessSummary": "Roblox Corporation operates an immersive platform for connection and communication in the United States and internationally. It offers Roblox Client, an application that allows users to explore immersive experience; Roblox Studio, a free toolset that allows developers and creators to build, publish, and operate immersive experiences and other content; and Roblox Cloud, which provides services and infrastructure that power the platform. Roblox Corporation was incorporated in 2004 and is headquartered in San Mateo, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-09-30T00:00:00.000",
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -151000000.0,
+            -108000000.0,
+            -176000000.0,
+            -244113000.0,
+            -192000000.0,
+            null,
+            null
+          ],
+          [
+            -283000000.0,
+            -229000000.0,
+            -294000000.0,
+            -358638000.0,
+            -296000000.0,
+            null,
+            null
+          ],
+          [
+            1572000000.0,
+            1469000000.0,
+            1442000000.0,
+            1415021000.0,
+            1360000000.0,
+            null,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-09-30T00:00:00.000",
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            395000000.0,
+            318000000.0,
+            629000000.0,
+            606998000.0,
+            546000000.0,
+            null,
+            null
+          ],
+          [
+            298000000.0,
+            282000000.0,
+            275000000.0,
+            298376000.0,
+            287000000.0,
+            null,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "LASR",
+      "captured_at_utc": "2026-11-02T01:14:27.551597+00:00",
+      "info": {
+        "shortName": "nLIGHT, Inc.",
+        "sector": "Technology",
+        "marketCap": 2142036992,
+        "currentPrice": 37.13,
+        "regularMarketPrice": 37.13,
+        "fiftyTwoWeekHigh": 86.95,
+        "heldPercentInstitutions": 0.94336,
+        "ebitda": -471000,
+        "longBusinessSummary": "nLIGHT, Inc. engages in the design, development, manufacture, and sale of semiconductor and fiber lasers for aerospace and defense, industrial, and microfabrication applications. It operates through two segments, Laser Products and Advanced Development. The company offers semiconductor lasers with various ranges of power levels, wavelengths, and output fiber sizes; and programmable and serviceable fiber lasers for use in aerospace and defense and industrial applications. It also provides fiber amplifiers, beam combination, and control systems for use in high-energy laser systems in directed energy applications. The company sells its products through direct sales force in the United States, China, South Korea, and European countries, as well as through independent sales representatives and distributors in Asia, Australia, Europe, the Middle East, and South America. The company was formerly known as nLight Photonics Corporation and changed its name to nLIGHT, Inc. in January 2016. nLIGHT, Inc. was incorporated in 2000 and is headquartered in Camas, Washington."
+      },
+      "financials": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            2275000.0,
+            4367000.0,
+            -447000.0,
+            -2971000.0,
+            229000.0
+          ],
+          [
+            -3567000.0,
+            -424000.0,
+            -4790000.0,
+            -5566000.0,
+            -4236000.0
+          ],
+          [
+            82591000.0,
+            80181000.0,
+            81185000.0,
+            66742000.0,
+            61735000.0
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-06-30T00:00:00.000",
+          "2026-03-31T00:00:00.000",
+          "2025-12-31T00:00:00.000",
+          "2025-09-30T00:00:00.000",
+          "2025-06-30T00:00:00.000",
+          "2025-03-31T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            20733000.0,
+            9683000.0,
+            17518000.0,
+            5217000.0,
+            -1385000.0,
+            null
+          ],
+          [
+            10963000.0,
+            10886000.0,
+            11622000.0,
+            9362000.0,
+            6371000.0,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "ticker": "TTAN",
+      "captured_at_utc": "2026-11-02T01:14:27.483552+00:00",
+      "info": {
+        "shortName": "ServiceTitan, Inc.",
+        "sector": "Technology",
+        "marketCap": 8128386048,
+        "currentPrice": 84.26,
+        "regularMarketPrice": 84.26,
+        "fiftyTwoWeekHigh": 111.36,
+        "heldPercentInstitutions": 1.0658699,
+        "ebitda": -74085000,
+        "longBusinessSummary": "ServiceTitan, Inc. provides an end-to-end cloud-based software platform in the United States, Armenia, and Canada. Its platform connects and manages a range of business workflows, such as advertising, job scheduling and management, dispatching, generating estimates and invoices, payment processing and others. The company offers ServiceTitan, a platform for contractors; FieldRoutes, pest control software; and Aspire, a business management software that offers real-time reports, precise data, accurate job costing for the landscape and clean industries. In addition, the company offers FinTech products that include payment processing and third-party financing solutions. It serves HVAC, plumbing, electrical, garage door, chimney sweep, roofing, irrigation, water treatment, septic, painting, pool service, landscape, lawn care, pest control, air duct cleaning, commercial food equipment, audio visual, alarm, appliance repair, residential remodeling, locksmith, refrigeration, handyman, gutter, siding, dock and door, fire and life safety industries. The company was formerly known as Linxlogic, Inc. and changed its name to ServiceTitan, Inc. in June 2014. The company was incorporated in 2007 and is based in Glendale, California."
+      },
+      "financials": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000",
+          "2025-04-30T00:00:00.000"
+        ],
+        "index": [
+          "EBITDA",
+          "Operating Income",
+          "Total Revenue"
+        ],
+        "data": [
+          [
+            -3447000.0,
+            -2134000.0,
+            -16384000.0,
+            -16398000.0,
+            -9769000.0,
+            null
+          ],
+          [
+            -27552000.0,
+            -25762000.0,
+            -40944000.0,
+            -42226000.0,
+            -34772000.0,
+            null
+          ],
+          [
+            292756000.0,
+            268824000.0,
+            253987000.0,
+            249163000.0,
+            242123000.0,
+            null
+          ]
+        ]
+      },
+      "cashflow": {
+        "columns": [
+          "2026-07-31T00:00:00.000",
+          "2026-04-30T00:00:00.000",
+          "2026-01-31T00:00:00.000",
+          "2025-10-31T00:00:00.000",
+          "2025-07-31T00:00:00.000",
+          "2025-04-30T00:00:00.000"
+        ],
+        "index": [
+          "Operating Cash Flow",
+          "Stock Based Compensation"
+        ],
+        "data": [
+          [
+            57989000.0,
+            -1565000.0,
+            40581000,
+            43780000,
+            40340000,
+            null
+          ],
+          [
+            60575000.0,
+            54574000.0,
+            54399000,
+            49660000,
+            49307000,
+            null
+          ]
+        ]
+      }
+    }
+  ]
+}

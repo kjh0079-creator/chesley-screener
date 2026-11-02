@@ -6,6 +6,89 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 
+
+REVENUE_GROWTH_MIN = 20.0
+
+
+def _finite_number(value):
+    try:
+        number = float(value)
+    except (TypeError, ValueError, OverflowError):
+        return None
+    return number if np.isfinite(number) else None
+
+
+def _sort_quarterly_statement(statement):
+    """Normalize period ends and sort newest first; ambiguous dates are unusable."""
+    if statement is None or statement.empty:
+        return pd.DataFrame()
+    # Numeric column labels are not reporting dates.
+    if any(isinstance(col, (int, float, np.number)) for col in statement.columns):
+        return pd.DataFrame()
+    dates = pd.to_datetime(statement.columns, errors="coerce", utc=True, format="mixed")
+    dates = dates.tz_convert(None).normalize()
+    if dates.isna().any() or dates.duplicated().any():
+        return pd.DataFrame()
+    ordered = statement.copy()
+    ordered.columns = dates
+    return ordered.sort_index(axis=1, ascending=False)
+
+
+def calculate_revenue_growth_yoy(quarterly_financials):
+    """Latest quarterly revenue versus the same period one year earlier.
+
+    Match period ends, never column positions. A seven-day tolerance accommodates
+    52/53-week fiscal calendars. Missing/ambiguous periods or invalid revenue
+    produce None, not an assumed growth rate or a fallback to an older quarter.
+    """
+    result = {
+        "rev_growth_yoy": None,
+        "revenue_period": None,
+        "revenue_prior_year_period": None,
+        "revenue_current": None,
+        "revenue_prior_year": None,
+        "rev_growth_reason": None,
+    }
+    fin = _sort_quarterly_statement(quarterly_financials)
+    if fin.empty:
+        result["rev_growth_reason"] = "분기 재무제표 또는 유효한 결산일 부족"
+        return result
+    latest = fin.columns[0]
+    result["revenue_period"] = latest.date().isoformat()
+    if "Total Revenue" not in fin.index or fin.index.duplicated().any():
+        result["rev_growth_reason"] = "매출 항목 누락 또는 중복 재무 항목"
+        return result
+    result["revenue_current"] = _finite_number(fin.at["Total Revenue", latest])
+    target = latest - pd.DateOffset(years=1)
+    candidates = [date for date in fin.columns
+                  if date < latest and abs(date - target) <= pd.Timedelta(days=7)]
+    if len(candidates) != 1:
+        result["rev_growth_reason"] = "전년 동기 분기 누락 또는 비교 결산일 중복"
+        return result
+    prior = candidates[0]
+    result["revenue_prior_year_period"] = prior.date().isoformat()
+    result["revenue_prior_year"] = _finite_number(fin.at["Total Revenue", prior])
+    current, previous = result["revenue_current"], result["revenue_prior_year"]
+    if current is None or current < 0:
+        result["rev_growth_reason"] = "최신 분기 매출 누락·비유한 값 또는 음수"
+        return result
+    if previous is None or previous <= 0:
+        result["rev_growth_reason"] = "전년 동기 매출 누락·비유한 값 또는 0 이하"
+        return result
+    growth = _finite_number((current - previous) / previous * 100)
+    if growth is None:
+        result["rev_growth_reason"] = "매출 성장률 계산 결과가 유효하지 않음"
+        return result
+    result["rev_growth_yoy"] = growth
+    return result
+
+
+def passes_revenue_growth(rev_growth, minimum=REVENUE_GROWTH_MIN):
+    """Use the unrounded YoY value for all growth eligibility decisions."""
+    growth = _finite_number(rev_growth)
+    return growth is not None and growth >= minimum
+
+
 def calculate_canslim_score(ticker_info, rev_growth, op_income, ebitda, ocf):
     """
     CANSLIM 모형 기반 점수화 (100점 만점)
@@ -16,6 +99,10 @@ def calculate_canslim_score(ticker_info, rev_growth, op_income, ebitda, ocf):
     - L (Leader/RS): 52주 신고가 근접도 및 상대강도 (15점)
     - I/M (Institutional/Market): 기관 보유 및 현금흐름 건전성 (10점)
     """
+    # A complete CANSLIM score cannot be calculated without verified YoY.
+    rev_growth = _finite_number(rev_growth)
+    if rev_growth is None:
+        return None
     score = 0.0
 
     # C: 최근 분기 매출 성장률 (최대 25점)
@@ -113,22 +200,22 @@ def analyze_live_ticker(ticker_symbol):
     market_cap_b = market_cap / 1e9 if market_cap else 0.0
 
     # 재무제표
-    fin = stock.quarterly_financials
-    cf = stock.quarterly_cashflow
+    fin = _sort_quarterly_statement(stock.quarterly_financials)
+    cf = _sort_quarterly_statement(stock.quarterly_cashflow)
 
     if fin is None or fin.empty or cf is None or cf.empty:
         return None
 
     # 최근 분기 데이터
     latest_fin = fin.iloc[:, 0]
-    prev_fin = fin.iloc[:, 1] if fin.shape[1] > 1 else latest_fin
 
     latest_cf = cf.iloc[:, 0]
 
     # 매출 및 성장률
-    rev_now = latest_fin.get("Total Revenue", 0) or 0
-    rev_prev = prev_fin.get("Total Revenue", 0) or 0
-    rev_growth = ((rev_now - rev_prev) / rev_prev * 100) if rev_prev > 0 else 15.0
+    revenue = calculate_revenue_growth_yoy(fin)
+    rev_now = revenue["revenue_current"]
+    rev_growth = revenue["rev_growth_yoy"]
+    revenue_growth_pass = passes_revenue_growth(rev_growth)
 
     # 손익 지표
     op_income = latest_fin.get("Operating Income", 0) or 0
@@ -136,7 +223,7 @@ def analyze_live_ticker(ticker_symbol):
     ocf = latest_cf.get("Operating Cash Flow", 0) or 0
     sbc = latest_cf.get("Stock Based Compensation", 0) or 0
 
-    sbc_ratio = (sbc / rev_now * 100) if rev_now > 0 else 0.0
+    sbc_ratio = (sbc / rev_now * 100) if rev_now is not None and rev_now > 0 else 0.0
 
     # 흑전 추정 분기
     losses = []
@@ -151,7 +238,7 @@ def analyze_live_ticker(ticker_symbol):
     # 조건: 시총 0.5B~20B, 매출성장 >= 20%, GAAP적자(<0), EBITDA>0 또는 OCF>0, 8분기 내 흑전
     pass_part2 = (
         (0.5 <= market_cap_b <= 20.0) and
-        (rev_growth >= 20.0) and
+        revenue_growth_pass and
         (op_income < 0) and
         (ebitda > 0 or ocf > 0) and
         (est_quarters <= 8)
@@ -162,7 +249,8 @@ def analyze_live_ticker(ticker_symbol):
         "name": info.get("shortName", ticker_symbol),
         "sector": info.get("sector", "기타"),
         "market_cap_b": round(market_cap_b, 2),
-        "rev_growth_yoy": round(rev_growth, 1),
+        **revenue,
+        "revenue_growth_pass": revenue_growth_pass,
         "op_income_m": round(op_income / 1e6, 1),
         "ebitda_m": round(ebitda / 1e6, 1),
         "ocf_m": round(ocf / 1e6, 1),
@@ -171,7 +259,7 @@ def analyze_live_ticker(ticker_symbol):
         "sbc_ratio": round(sbc_ratio, 1),
         "est_quarters_to_gaap": est_quarters,
         "canslim": canslim,
-        "pass_part2": pass_part2,
+        "pass_part2": bool(pass_part2),
         "summary": info.get("longBusinessSummary", "")[:120] + "..." if info.get("longBusinessSummary") else "사업 개요 정보 없음",
         "current_price": info.get("currentPrice") or info.get("regularMarketPrice", 0)
     }
